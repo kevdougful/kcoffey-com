@@ -189,3 +189,59 @@ block content
 							p Have a laptop with a key that doesn't work? How about that new iPhone with shattered screen? I can fix that!
 					// End Service Icon
 		// End Services Section
+		
+		// Start Testimonials Section
+		div
+			.container
+				.row
+					.col-md-8
+						// Start Recent Posts Carousel
+						.latest-posts
+							h4.classic-title
+								span Latest News
+							.latest-posts-classic.custom-carousel.touch-carousel(data-appeared-items='2')
+								
+								// Post
+								.post-row.item
+									.left-meta-post
+										.post-date
+											span.day 28
+											span.month Dec
+											
+										.post-type
+											i.fa.fa-picture-o
+											
+									h3.post-title
+										a(href='#') Standard post with image
+									.post-content
+										p Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit. #[a.read-more(href="#") Read More... ]
+								
+								
+						// End Recent Posts Carousel
+					
+					.col-md-4
+					
+						// Start Testimonials Carousel
+						h4.classic-title
+							span Testimonials
+						.custom-carousel.show-one-slide.touch-carousel(data-appeared-items='1')
+							
+							// Testimonial
+							.classic-testimonials.item
+								.testimonial-content
+									p Some testimonial text
+								.testimonial-author #[span Joe Public] - Customer
+							
+							// Testimonial
+							.classic-testimonials.item
+								.testimonial-content
+									p Some testimonial text
+								.testimonial-author #[span Joe Public] - Customer
+							
+							// Testimonial
+							.classic-testimonials.item
+								.testimonial-content
+									p Some testimonial text
+								.testimonial-author #[span Joe Public] - Customer
+						// End Testimonials Carousel
+		// End Testimonials Section
