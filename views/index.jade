@@ -62,7 +62,7 @@ block content
 					.navbar-collapse.collapse
 						// Start Search
 						.search-side
-							a(href="#")
+							a.show-search(href="#")
 								i.fa.fa-search
 							.search-form
 								form.searchform(autocomplete='off', role='search', method='get', action='#')
@@ -87,6 +87,66 @@ block content
 										a(href='#') Item 5
 						// End Navigation List
 			// End Logo & Navigation
-									
-								
-									
+		// End Header
+		
+		// Start Home Page Slider
+		section#home
+			// Start Carousel
+			#main-slide.carousel.slide(data-ride='carousel')
+			
+				// Start Indicators
+				ol.carousel-indicators
+					li.active(data-target='#main-slide', data-slide-to='0')
+					li(data-target='#main-slide', data-slide-to='1')
+					li(data-target='#main-slide', data-slide-to='2')
+				// End Indicators
+				
+				// Start Carousel Inner
+				.carousel-inner
+					// Start Item 1
+					.item.active
+						img.img-responsive(src='images/slider/bg1.jpg', alt='slider')
+						.slider-content
+							.col-md-12.text-center
+								h2.animated2
+									span Welcome to #[strong kcoffey.com]
+								h3.animated3
+									span Have a look around!
+								p.animated4
+									a.slider.btn.btn-system.btn-large(href='#') Check it out!
+					// End Item 1
+					// Start Item 2
+					.item
+						img.img-responsive(src='images/slider/bg2.jpg', alt='slider')
+						.slider-content
+							.col-md-12.text-center
+								h2.animated4
+									span There is stuff to see!
+								h3.animated5
+									span Have a look around!
+								p.animated6
+									a.slider.btn.btn-system.btn-large(href='#') Really, check it out!
+					// End Item 2
+					// Start Item 3
+					.item
+						img.img-responsive(src='images/slider/bg3.jpg', alt='slider')
+						.slider-content
+							.col-md-12.text-center
+								h2.animated7.white
+									span Are you mesmorized by the carousel?
+								h3.animated8.white
+									span Snap out of it!
+								p.animated4
+									a.slider.btn.btn-system.btn-large.btn-min-block(href='#') What are you waiting for?
+					// End Item 3
+				// End Carousel Inner
+				
+				// Start Carousel Controls
+				a.left.carousel-control(href='#main-slide', data-slide='prev')
+					span
+						i.fa.fa-angle-left
+				a.right.carousel-control(href='#main-slide', data-slide='next')
+					span
+						i.fa.fa-angle-right
+			// End Carousel
+		// End Home Page Slider			
