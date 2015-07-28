@@ -1,0 +1,51 @@
+extends layout
+
+block head
+	include head
+
+block content
+	// Full Body Container
+	#container
+	
+		// Start Header Section
+		.hidden-header
+		header.clearfix
+			
+			// Start Top Bar
+			.top-bar.dark-bar
+				.container
+					.row
+						.col-md-7
+							// Start Contact Info
+							ul.contact-details
+								li
+									a(href='mailto:kevdougful@gmail.com')
+										i.fa.fa-envelope-o  kevdougful@gmail.com
+								li
+									a(href='')
+										i.fa.fa-map-marker  Maryland Heights, MO
+							// End Contact Info
+						.col-md-5
+							// Start Social Links
+							ul.social-list
+								li
+									a.facebook.itl-tooltip(href='https://www.facebook.com/kev.coffey', data-placement='bottom', title='Facebook')
+										i.fa.fa-facebook
+								li
+									a.twitter.itl-tooltip(href='https://twitter.com/kevdougful', data-placement='bottom', title='Twitter')
+										i.fa.fa-twitter
+								li
+									a.google.itl-tooltip(href='https://www.google.com/+KevinCoffeyFul', data-placement='bottom', title='Google Plus')
+										i.fa.fa-google-plus
+								li
+									a.linkdin.itl-tooltip(href='https://www.linkedin.com/in/kevdougful', data-placement='bottom', title='Linkedin')
+										i.fa.fa-linkedin
+								li
+									a.instgram.itl-tooltip(href='https://instagram.com/kevdougful/', data-placement='bottom', title='Instagram')
+										i.fa.fa-instagram
+								li
+									a.reddit.itl-tooltip(href='https://www.reddit.com/user/kevdougful', data-placement='bottom', title='Reddit')
+										i.fa.fa-reddit
+							// End Social Links
+			// End Top Bar
+									
