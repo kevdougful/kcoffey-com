@@ -1,0 +1,81 @@
+// Start Header Section
+.hidden-header
+header.clearfix
+	
+	// Start Top Bar
+	.top-bar.dark-bar
+		.container
+			.row
+				.col-md-7
+					// Start Contact Info
+					ul.contact-details
+						li
+							a(href='mailto:kevdougful@gmail.com')
+								i.fa.fa-envelope-o  kevdougful@gmail.com
+						li
+							a(href='')
+								i.fa.fa-map-marker  Maryland Heights, MO
+					// End Contact Info
+				.col-md-5
+					// Start Social Links
+					ul.social-list
+						li
+							a.facebook.itl-tooltip(href='https://www.facebook.com/kev.coffey', data-placement='bottom', title='Facebook')
+								i.fa.fa-facebook
+						li
+							a.twitter.itl-tooltip(href='https://twitter.com/kevdougful', data-placement='bottom', title='Twitter')
+								i.fa.fa-twitter
+						li
+							a.google.itl-tooltip(href='https://www.google.com/+KevinCoffeyFul', data-placement='bottom', title='Google Plus')
+								i.fa.fa-google-plus
+						li
+							a.linkdin.itl-tooltip(href='https://www.linkedin.com/in/kevdougful', data-placement='bottom', title='Linkedin')
+								i.fa.fa-linkedin
+						li
+							a.instgram.itl-tooltip(href='https://www.instagram.com/kevdougful/', data-placement='bottom', title='Instagram')
+								i.fa.fa-instagram
+						li
+							a.instgram.itl-tooltip(href='https://www.reddit.com/user/kevdougful', data-placement='bottom', title='Reddit')
+								i.fa.fa-reddit
+					// End Social Links
+	// End Top Bar
+	
+	// Start Logo & Navigation
+	.navbar.navbar-default.navbar-top
+		.container
+			.navbar-header
+				// Start Toggle Nav Link For Mobiles
+				button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+					i.fa.fa-bars
+				// End Toggle Nav Link For Mobiles
+				a.navbar-brand(href='index.html')
+					img(src='images/kcoffey.png', alt='')
+			.navbar-collapse.collapse
+				// Start Search
+				.search-side
+					a.show-search(href="#")
+						i.fa.fa-search
+					.search-form
+						form.searchform(autocomplete='off', role='search', method='get', action='#')
+							input#s(type='text', value='', name='s', placeholder='Search the site...')
+				// End Search
+				// Start Navigation List
+				ul.nav.navbar-nav.navbar-right
+					li
+						a.active(href='/') Home
+					li
+						a(href='#') Dropdown
+						ul.dropdown
+							li
+								a(href='#') Item 1
+							li
+								a(href='#') Item 2
+							li
+								a(href='#') Item 3
+							li
+								a(href='#') Item 4
+							li
+								a(href='#') Item 5
+				// End Navigation List
+	// End Logo & Navigation
+// End Header
