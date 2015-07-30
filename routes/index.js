@@ -11,4 +11,14 @@ router.get('/contact', function(req, res, next) {
   res.render('contact', { pagetitle: 'kcoffey.com' });
 });
 
+/* GET blog page. */
+router.get('/blog', function(req, res, next) {
+  res.render('blog', { pagetitle: 'kcoffey.com' });
+});
+
+/* GET about page. */
+router.get('/about', function(req, res, next) {
+  res.render('about', { pagetitle: 'kcoffey.com' });
+});
+
 module.exports = router;
