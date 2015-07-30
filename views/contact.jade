@@ -1,0 +1,78 @@
+extends layout
+
+block head
+	include head
+	
+block header
+	include header
+
+block footer
+	include footer
+
+block scripts
+	script(type='text/javascript', src='http://maps.googleapis.com/maps/api/js')
+	script(type='text/javascript', src='js/map.js')
+
+block content
+	//#map(data-position-latitude='38.712873', data-position-long='90.430126', style='margin-bottom:50px;')
+	
+	// Start Content
+	.content(style='margin-bottom:20px; margin-top:50px;')
+		.container
+			.row
+				// Start Contact Form
+				.col-md-8
+					// Classic Heading
+					h4.classic-title #[span Contact Me]
+					form#contact-form.contact-form(role='form', method='post')
+						.form-group
+							.controls
+								input(type='text', placeholder='Name', name='name')
+						.form-group
+							.controls
+								input.email(type='email', placeholder='email', name='email')
+						.form-group
+							.controls
+								input.requiredField(type='text', placeholder='Subject', name='subject')
+						.form-group
+							.controls
+								textarea(rows='7', style='resize: vertical;' placeholder='Message', name='message')
+						button#submit.btn-system.btn-large(type='submit') Send
+						#success(style="color:#34495e; margin-bottom: 10px;")
+				// End Contact Form
+				
+				// Start Info
+				.col-md-4
+					// Classic Heading
+					h4.classic-title #[span Information]
+					// Some Informational Text
+					p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+					// Divider
+					.hr1(style="margin-bottom:10px;")
+					// Info Icons
+					ul.icons-list
+						li
+							i.fa-fa-envelope-o
+							strong Email:  
+							span kevdougful@gmail.com
+						li
+							i.fa-fa-mobile
+							strong Phone:  
+							span +1.314.651.2965
+					// Divider
+					.hr1(style="margin-bottom:15px;")
+					// Classic Heading
+					h4.classic-title #[span Hours & Travel]
+					p I work a 9-5 M-F job, but I'm flexible and I can squeeze work in wherever it fits.  I can come to your place, or you can drop it off with me.
+					ul.list-unstyled
+						li
+							strong Mon-Fri:
+							span   9-5
+						li
+							strong Sat:
+							span   Call
+						li
+							strong Sun:
+							span   Call
+				// End Info
+	// End Content
